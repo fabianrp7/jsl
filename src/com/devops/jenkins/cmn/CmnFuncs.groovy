@@ -15,7 +15,7 @@ class CmnFuncs{
     void getProjectInfo(projectName){
             scriptPL.cleanWs()
             def project
-            scriptPL.dir("jenkinssharedlibrary"){
+            scriptPL.dir("jsl"){
                 scriptPL.git credentialsId: GlobalVars.gitCredentialsId, url: GlobalVars.urlShareLibrary
                 def path = scriptPL.pwd()
                 def pathJson = path + "/" + "resources/projects/projects.txt"
