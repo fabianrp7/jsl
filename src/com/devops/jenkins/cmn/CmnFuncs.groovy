@@ -16,7 +16,7 @@ class CmnFuncs{
             scriptPL.cleanWs()
             def project
             scriptPL.dir("jsl"){
-                scriptPL.git credentialsId: GlobalVars.giteaCredentialsId, url: GlobalVars.urlShareLibrary
+                scriptPL.git credentialsId: GlobalVars.gitCredentialsId, url: GlobalVars.urlShareLibrary
                 def path = scriptPL.pwd()
                 def pathJson = path + "/" + "resources/projects/projects.txt"
                 def jsonSlurper = new JsonSlurperClassic()
