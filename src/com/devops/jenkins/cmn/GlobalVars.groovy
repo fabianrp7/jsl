@@ -3,5 +3,5 @@ package com.devops.jenkins.cmn
 
 class GlobalVars {
    static String urlShareLibrary = "https://github.com/fabianrp7/jsl.git"
-   static String giteaCredentialsId = "login_github"   
+   static String giteaCredentialsId = "github_login"   
 }
